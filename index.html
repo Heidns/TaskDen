@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskDen — To-Do List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Task<span>Den</span></h1>
+  <div id="date-display"></div>
+</header>
+
+<div class="stats">
+  <div class="stat-pill"><strong id="stat-total">0</strong> total</div>
+  <div class="stat-pill"><strong id="stat-done">0</strong> done</div>
+  <div class="stat-pill"><strong id="stat-left">0</strong> remaining</div>
+</div>
+
+<div class="progress-wrap">
+  <div class="progress-label">
+    <span>Progress</span>
+    <span id="progress-pct">0%</span>
+  </div>
+  <div class="progress-bar-bg">
+    <div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div>
+  </div>
+</div>
+
+<div class="input-card">
+  <div class="input-row">
+    <input type="text" id="task-input" placeholder="What needs to be done?" maxlength="120" />
+    <button id="add-btn">+ Add</button>
+  </div>
+  <div class="input-meta">
+    <select class="tag-select" id="tag-select">
+      <option value="none">No tag</option>
+      <option value="work">Work</option>
+      <option value="personal">Personal</option>
+      <option value="urgent">Urgent</option>
+    </select>
+    <select class="priority-select" id="priority-select">
+      <option value="medium">Medium priority</option>
+      <option value="high">High priority</option>
+      <option value="low">Low priority</option>
+    </select>
+    <span id="error-msg">Task cannot be empty!</span>
+  </div>
+</div>
+
+<div class="filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="active">Active</button>
+  <button class="filter-btn" data-filter="done">Completed</button>
+  <button class="filter-btn" data-filter="high">High priority</button>
+  <button class="clear-btn" id="clear-done">Clear completed</button>
+</div>
+
+<div id="task-list"></div>
+
+<div id="empty-state">
+  <div class="emoji">🪷</div>
+  <p id="empty-text">Mind is clear. Add a task when you're ready.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
