@@ -1,5 +1,6 @@
-<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/d9e5398f-a2c5-48b1-a432-51010641b777" />
 # TaskDen 🪷
+
+<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/d9e5398f-a2c5-48b1-a432-51010641b777" />
 
 TaskDen is a serene, zen-inspired to-do list web application designed to keep your mind clear and your tasks organized. Built with a focus on tranquility, it features a calming UI with glass-morphism effects and a peaceful background to help you get into a productive flow state.
 
